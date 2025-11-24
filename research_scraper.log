@@ -1,0 +1,133 @@
+2025-11-22 23:04:56,022 - research_scraper - INFO - Searching arXiv for: Heart Disease
+2025-11-22 23:04:56,023 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:04:56,582 - arxiv - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:04:56,971 - arxiv - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:04:57,501 - arxiv - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:04:58,590 - research_scraper - ERROR - Error searching arXiv: HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:04:58,590 - research_scraper - INFO - Searching DOAJ for: Heart Disease
+2025-11-22 23:05:01,532 - research_scraper - INFO - Found 3 papers on DOAJ
+2025-11-22 23:05:01,533 - research_scraper - INFO - Searching CORE for: Heart Disease
+2025-11-22 23:05:01,533 - research_scraper - ERROR - CORE API key not found. Please set CORE_API_KEY environment variable.
+2025-11-22 23:05:01,534 - research_scraper - INFO - Searching OpenAlex for: Heart Disease
+2025-11-22 23:05:02,828 - research_scraper - ERROR - Error searching OpenAlex: HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?search=Heart+Disease&filter=has_fulltext%3Atrue&per-page=3&sort=relevance_score%3Adesc (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:05:02,832 - research_scraper - INFO - Downloading PDF from http://link.springer.com/article/10.1186/s12937-017-0254-5
+2025-11-22 23:05:02,833 - research_scraper - INFO - Downloading PDF from https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003967&type=printable
+2025-11-22 23:05:02,833 - research_scraper - INFO - Downloading PDF from https://www.ahajournals.org/doi/10.1161/JAHA.120.017363
+2025-11-22 23:05:03,482 - research_scraper - ERROR - Failed to download PDF. Status code: 403
+2025-11-22 23:05:04,665 - research_scraper - INFO - PDF downloaded successfully: research_data\pdfs\doaj_00010d90762647c49b99bd6f03254c97.pdf
+2025-11-22 23:05:06,575 - research_scraper - INFO - PDF downloaded successfully: research_data\pdfs\doaj_00005675f2754182b0bdd8c774f5738c.pdf
+2025-11-22 23:05:07,682 - research_scraper - INFO - Processing 3 papers with Gemini
+2025-11-22 23:05:07,684 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:05:07,693 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:05:07,693 - research_scraper - WARNING - Failed to get summary for paper: Genetic associations of adult height with risk of cardioembolic and other subtypes of ischemic stroke: A mendelian randomization study in multiple ancestries.
+2025-11-22 23:05:07,694 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:05:07,694 - research_scraper - WARNING - Failed to get summary for paper: The effect of replacing saturated fat with mostly n-6 polyunsaturated fat on coronary heart disease: a meta-analysis of randomised controlled trials
+2025-11-22 23:05:07,695 - research_scraper - ERROR - Gemini API key missing.
+2025-11-22 23:19:13,380 - research_scraper - INFO - Searching arXiv for: Heart Disease
+2025-11-22 23:19:13,380 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:19:13,884 - arxiv - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:19:14,264 - arxiv - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:19:14,693 - arxiv - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:19:15,052 - research_scraper - ERROR - Error searching arXiv: HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:19:15,053 - research_scraper - INFO - Searching DOAJ for: Heart Disease
+2025-11-22 23:19:15,921 - research_scraper - INFO - Found 3 papers on DOAJ
+2025-11-22 23:19:15,922 - research_scraper - INFO - Searching CORE for: Heart Disease
+2025-11-22 23:19:15,923 - research_scraper - ERROR - CORE API key not found. Please set CORE_API_KEY environment variable.
+2025-11-22 23:19:15,923 - research_scraper - INFO - Searching OpenAlex for: Heart Disease
+2025-11-22 23:19:17,484 - research_scraper - ERROR - Error searching OpenAlex: HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?search=Heart+Disease&filter=has_fulltext%3Atrue&per-page=3&sort=relevance_score%3Adesc (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:19:17,486 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00005675f2754182b0bdd8c774f5738c.pdf
+2025-11-22 23:19:17,487 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00010d90762647c49b99bd6f03254c97.pdf
+2025-11-22 23:19:17,487 - research_scraper - INFO - Downloading PDF from https://www.ahajournals.org/doi/10.1161/JAHA.120.017363
+2025-11-22 23:19:19,087 - research_scraper - ERROR - Failed to download PDF. Status code: 403
+2025-11-22 23:19:19,089 - research_scraper - INFO - Processing 3 papers with Gemini
+2025-11-22 23:19:19,090 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:19:19,090 - research_scraper - WARNING - Failed to get summary for paper: The effect of replacing saturated fat with mostly n-6 polyunsaturated fat on coronary heart disease: a meta-analysis of randomised controlled trials
+2025-11-22 23:19:19,091 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:19:19,091 - research_scraper - WARNING - Failed to get summary for paper: Genetic associations of adult height with risk of cardioembolic and other subtypes of ischemic stroke: A mendelian randomization study in multiple ancestries.
+2025-11-22 23:19:19,092 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:19:19,099 - research_scraper - ERROR - Gemini API key missing.
+2025-11-22 23:22:38,394 - research_scraper - INFO - Searching arXiv for: Heart Disease
+2025-11-22 23:22:38,394 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:22:39,246 - arxiv - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:22:39,710 - arxiv - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:22:40,053 - arxiv - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:22:40,539 - research_scraper - ERROR - Error searching arXiv: HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:22:40,540 - research_scraper - INFO - Searching DOAJ for: Heart Disease
+2025-11-22 23:22:41,336 - research_scraper - INFO - Found 3 papers on DOAJ
+2025-11-22 23:22:41,339 - research_scraper - INFO - Searching CORE for: Heart Disease
+2025-11-22 23:22:41,339 - research_scraper - ERROR - CORE API key not found. Please set CORE_API_KEY environment variable.
+2025-11-22 23:22:41,340 - research_scraper - INFO - Searching OpenAlex for: Heart Disease
+2025-11-22 23:22:42,120 - research_scraper - ERROR - Error searching OpenAlex: HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?search=Heart+Disease&filter=has_fulltext%3Atrue&per-page=3&sort=relevance_score%3Adesc (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:22:42,124 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00005675f2754182b0bdd8c774f5738c.pdf
+2025-11-22 23:22:42,125 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00010d90762647c49b99bd6f03254c97.pdf
+2025-11-22 23:22:42,154 - research_scraper - INFO - Downloading PDF from https://www.ahajournals.org/doi/10.1161/JAHA.120.017363
+2025-11-22 23:22:42,646 - research_scraper - ERROR - Failed to download PDF. Status code: 403
+2025-11-22 23:22:42,651 - research_scraper - INFO - Processing 3 papers with Gemini
+2025-11-22 23:22:42,654 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:22:42,655 - research_scraper - WARNING - Failed to get summary for paper: The effect of replacing saturated fat with mostly n-6 polyunsaturated fat on coronary heart disease: a meta-analysis of randomised controlled trials
+2025-11-22 23:22:42,657 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:22:42,657 - research_scraper - WARNING - Failed to get summary for paper: Genetic associations of adult height with risk of cardioembolic and other subtypes of ischemic stroke: A mendelian randomization study in multiple ancestries.
+2025-11-22 23:22:42,659 - research_scraper - ERROR - Gemini API key not found. Please set GEMINI_API_KEY environment variable.
+2025-11-22 23:22:42,666 - research_scraper - ERROR - Gemini API key missing.
+2025-11-22 23:49:02,221 - research_scraper - INFO - Searching arXiv for: Heart Disease
+2025-11-22 23:49:02,222 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:49:03,110 - arxiv - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:49:03,705 - arxiv - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:49:04,618 - arxiv - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-22 23:49:05,210 - research_scraper - ERROR - Error searching arXiv: HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:49:05,211 - research_scraper - INFO - Searching DOAJ for: Heart Disease
+2025-11-22 23:49:06,086 - research_scraper - INFO - Found 3 papers on DOAJ
+2025-11-22 23:49:06,088 - research_scraper - INFO - Searching CORE for: Heart Disease
+2025-11-22 23:49:06,088 - research_scraper - ERROR - CORE API key not found. Please set CORE_API_KEY environment variable.
+2025-11-22 23:49:06,089 - research_scraper - INFO - Searching OpenAlex for: Heart Disease
+2025-11-22 23:49:07,729 - research_scraper - ERROR - Error searching OpenAlex: HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?search=Heart+Disease&filter=has_fulltext%3Atrue&per-page=3&sort=relevance_score%3Adesc (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-22 23:49:07,735 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00005675f2754182b0bdd8c774f5738c.pdf
+2025-11-22 23:49:07,791 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00010d90762647c49b99bd6f03254c97.pdf
+2025-11-22 23:49:07,835 - research_scraper - INFO - Downloading PDF from https://www.ahajournals.org/doi/10.1161/JAHA.120.017363
+2025-11-22 23:49:09,384 - research_scraper - ERROR - Failed to download PDF. Status code: 403
+2025-11-22 23:49:09,389 - research_scraper - INFO - Processing 3 papers with Gemini
+2025-11-22 23:49:11,025 - research_scraper - ERROR - Error from Gemini API: 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-11-22 23:49:11,028 - research_scraper - WARNING - Failed to get summary for paper: The effect of replacing saturated fat with mostly n-6 polyunsaturated fat on coronary heart disease: a meta-analysis of randomised controlled trials
+2025-11-22 23:49:12,665 - research_scraper - ERROR - Error from Gemini API: 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-11-22 23:49:12,669 - research_scraper - WARNING - Failed to get summary for paper: Genetic associations of adult height with risk of cardioembolic and other subtypes of ischemic stroke: A mendelian randomization study in multiple ancestries.
+2025-11-22 23:49:14,138 - research_scraper - ERROR - Error from Gemini API: 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-11-23 00:14:34,608 - research_scraper - INFO - Searching arXiv for: Heart Disease
+2025-11-23 00:14:34,609 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-23 00:14:36,012 - arxiv - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-23 00:14:37,969 - arxiv - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-23 00:14:39,144 - arxiv - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-11-23 00:14:39,930 - research_scraper - ERROR - Error searching arXiv: HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=Heart+Disease&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-23 00:14:39,931 - research_scraper - INFO - Searching DOAJ for: Heart Disease
+2025-11-23 00:14:42,148 - research_scraper - INFO - Found 3 papers on DOAJ
+2025-11-23 00:14:42,151 - research_scraper - INFO - Searching CORE for: Heart Disease
+2025-11-23 00:14:42,151 - research_scraper - ERROR - CORE API key not found. Please set CORE_API_KEY environment variable.
+2025-11-23 00:14:42,152 - research_scraper - INFO - Searching OpenAlex for: Heart Disease
+2025-11-23 00:14:43,811 - research_scraper - ERROR - Error searching OpenAlex: HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?search=Heart+Disease&filter=has_fulltext%3Atrue&per-page=3&sort=relevance_score%3Adesc (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))
+2025-11-23 00:14:43,814 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00005675f2754182b0bdd8c774f5738c.pdf
+2025-11-23 00:14:43,814 - research_scraper - INFO - PDF already exists: research_data\pdfs\doaj_00010d90762647c49b99bd6f03254c97.pdf
+2025-11-23 00:14:43,815 - research_scraper - INFO - Downloading PDF from https://www.ahajournals.org/doi/10.1161/JAHA.120.017363
+2025-11-23 00:14:46,878 - research_scraper - ERROR - Failed to download PDF. Status code: 403
+2025-11-23 00:14:46,881 - research_scraper - INFO - Processing 3 papers with Gemini
+2025-11-23 00:14:53,181 - research_scraper - INFO - Successfully processed paper: The effect of replacing saturated fat with mostly n-6 polyunsaturated fat on coronary heart disease: a meta-analysis of randomised controlled trials
+2025-11-23 00:14:56,401 - research_scraper - INFO - Paper not relevant to AI/ML/Data Science: Genetic associations of adult height with risk of cardioembolic and other subtypes of ischemic stroke: A mendelian randomization study in multiple ancestries.
