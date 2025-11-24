@@ -1,0 +1,107 @@
+ {
+    "__target__": "Exercise Habits",
+    "Exercise Habits": {
+        "type": "categorical",
+        "unique": 3,
+        "top_values": [
+            "High",
+            "Medium",
+            "Low",
+            "nan"
+        ],
+        "missing": 25
+    },
+    "Low HDL Cholesterol": {
+        "type": "categorical",
+        "unique": 2,
+        "top_values": [
+            "Yes",
+            "No",
+            "nan"
+        ],
+        "missing": 25
+    },
+    "High Blood Pressure": {
+        "type": "categorical",
+        "unique": 2,
+        "top_values": [
+            "Yes",
+            "No",
+            "nan"
+        ],
+        "missing": 26
+    },
+    "CRP Level": {
+        "type": "numeric",
+        "min": 0.0036467123625,
+        "max": 14.997086730710286,
+        "mean": 7.472200593944747,
+        "missing": 26
+    },
+    "Sleep Hours": {
+        "type": "numeric",
+        "min": 4.000605495703501,
+        "max": 9.999952253817796,
+        "mean": 6.991329446342598,
+        "missing": 25
+    },
+    "BMI": {
+        "type": "numeric",
+        "min": 18.00283694367505,
+        "max": 39.99695379658124,
+        "mean": 29.077268927511035,
+        "missing": 22
+    },
+    "Homocysteine Level": {
+        "type": "numeric",
+        "min": 5.000236488356111,
+        "max": 19.99903699208996,
+        "mean": 12.45627088214965,
+        "missing": 20
+    },
+    "Triglyceride Level": {
+        "type": "numeric",
+        "min": 100.0,
+        "max": 400.0,
+        "mean": 250.73440946460798,
+        "missing": 26
+    },
+    "Cholesterol Level": {
+        "type": "numeric",
+        "min": 150.0,
+        "max": 300.0,
+        "mean": 225.42557673019058,
+        "missing": 30
+    },
+    "Diabetes": {
+        "type": "categorical",
+        "unique": 2,
+        "top_values": [
+            "No",
+            "Yes",
+            "nan"
+        ],
+        "missing": 30
+    },
+    "Fasting Blood Sugar": {
+        "type": "numeric",
+        "min": 80.0,
+        "max": 160.0,
+        "mean": 120.14221286831028,
+        "missing": 22
+    },
+    "Age": {
+        "type": "numeric",
+        "min": 18.0,
+        "max": 80.0,
+        "mean": 49.296259151539466,
+        "missing": 29
+    },
+    "Blood Pressure": {
+        "type": "numeric",
+        "min": 120.0,
+        "max": 180.0,
+        "mean": 149.75773970544034,
+        "missing": 19
+    }
+}

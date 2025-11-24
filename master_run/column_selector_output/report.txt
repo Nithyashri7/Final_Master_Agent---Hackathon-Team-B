@@ -1,0 +1,36 @@
+======================================================================
+Life-Sciences Column Selection Report — Combined Clinical Mode
+Dataset: C:\Users\nithyashri.murali\Downloads\TeamB_HackathonProject\master_run\downloads\heart_disease.csv
+Detected domain: cardiology — Cardiac biomarkers and vital signs influencing ischemic disease and functional capacity.
+Rows: 10000   Columns (raw): 21
+
+Selection Table:
+
+| Column               | Status            | Biological Reason                                                                                 |
+|----------------------|-------------------|---------------------------------------------------------------------------------------------------|
+| Exercise Habits      | Selected (TARGET) | This is the main outcome variable for clinical interpretation.                                    |
+| Low HDL Cholesterol  | Selected          | Low HDL Cholesterol relates to heart function or ischemic response influencing clinical outcomes. |
+| High Blood Pressure  | Selected          | High Blood Pressure relates to heart function or ischemic response influencing clinical outcomes. |
+| CRP Level            | Selected          | CRP Level indicates cardiovascular stress or perfusion, shaping cardiac risk.                     |
+| Sleep Hours          | Selected          | Sleep Hours relates to heart function or ischemic response influencing clinical outcomes.         |
+| BMI                  | Selected          | BMI relates to heart function or ischemic response influencing clinical outcomes.                 |
+| Homocysteine Level   | Selected          | Homocysteine Level relates to heart function or ischemic response influencing clinical outcomes.  |
+| Triglyceride Level   | Selected          | Triglyceride Level relates to heart function or ischemic response influencing clinical outcomes.  |
+| Cholesterol Level    | Selected          | Cholesterol Level relates to heart function or ischemic response influencing clinical outcomes.   |
+| Diabetes             | Selected          | Diabetes relates to heart function or ischemic response influencing clinical outcomes.            |
+| Fasting Blood Sugar  | Selected          | Fasting Blood Sugar indicates cardiovascular stress or perfusion, shaping cardiac risk.           |
+| Age                  | Selected          | Age indicates cardiovascular stress or perfusion, shaping cardiac risk.                           |
+| Blood Pressure       | Selected          | Blood Pressure relates to heart function or ischemic response influencing clinical outcomes.      |
+| Gender               | Rejected          | Gender is lightly tied to cardiovascular physiology compared to retained markers.                 |
+| Smoking              | Rejected          | Smoking is lightly tied to cardiovascular physiology compared to retained markers.                |
+| Family Heart Disease | Rejected          | Family Heart Disease is lightly tied to cardiovascular physiology compared to retained markers.   |
+| High LDL Cholesterol | Rejected          | High LDL Cholesterol is lightly tied to cardiovascular physiology compared to retained markers.   |
+| Alcohol Consumption  | Rejected          | Alcohol Consumption is lightly tied to cardiovascular physiology compared to retained markers.    |
+| Stress Level         | Rejected          | Stress Level is lightly tied to cardiovascular physiology compared to retained markers.           |
+| Sugar Consumption    | Rejected          | Sugar Consumption is lightly tied to cardiovascular physiology compared to retained markers.      |
+| Heart Disease Status | Rejected          | Heart Disease Status is lightly tied to cardiovascular physiology compared to retained markers.   |
+
+Notes:
+- Report is clinician-friendly (biology-based reasoning only).
+- Numeric stats stored separately in metadata.json.
+======================================================================
