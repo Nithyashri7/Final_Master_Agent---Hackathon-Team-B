@@ -1,0 +1,40 @@
+{
+  "topic": "Heart Disease",
+  "raw_dataset_dir": "C:\\Users\\nithyashri.murali\\Downloads\\TeamB_HackathonProject\\master_run\\downloads",
+  "raw_csv_path": "C:\\Users\\nithyashri.murali\\Downloads\\TeamB_HackathonProject\\master_run\\downloads\\heart_disease.csv",
+  "column_selector": {
+    "target_column": "Exercise Habits",
+    "selected_columns": [
+      "Exercise Habits",
+      "Low HDL Cholesterol",
+      "High Blood Pressure",
+      "CRP Level",
+      "Sleep Hours",
+      "BMI",
+      "Homocysteine Level",
+      "Triglyceride Level",
+      "Cholesterol Level",
+      "Diabetes",
+      "Fasting Blood Sugar",
+      "Age",
+      "Blood Pressure"
+    ],
+    "output_dir": "master_run\\column_selector_output"
+  },
+  "synthetic_data": {
+    "rows": 10000,
+    "csv_path": "master_run\\synthetic_data\\synthetic_dataset.csv"
+  },
+  "research": {
+    "papers_found": 3,
+    "relevant_papers": 2,
+    "best_model_report": "Paper 3 Title: Machine learning prediction of lung cancer risk: Development and validation of a clinical risk model\nPaper 3 Summary:\n1. Title: Machine learning prediction of lung cancer risk: Development and validation of a clinical risk model\n2. Authors: Yujia Qin\n3. Published Year: 2023\n4. Summary: This study develops and validates a machine learning (ML) model to predict lung cancer risk. The model utilizes a comprehensive set of clinical and demographic features to improve risk stratification compared to existing models. The study employs various ML algorithms, including logistic regression, support vector machines (SVM), random forests, and gradient boosting machines (GBM). The performance of these models is evaluated using metrics such as area under the receiver operating characteristic curve (AUC-ROC), sensitivity, and specificity. The results demonstrate that the ML model, particularly GBM, achieves superior predictive performance compared to traditional risk assessment tools. The model has the potential to enhance early detection efforts and personalized screening strategies for lung cancer.\n5. Key methods:\n   a) Retrospective analysis of electronic health record data\n   b) Development and validation of ML models for lung cancer risk prediction (Logistic Regression, SVM, Random Forests, GBM)\n   c) Comparison of model performance using AUC-ROC, sensitivity, and specificity\n6. Performance metrics:\n   - AUC-ROC: Used to measure the discriminative ability of the models.\n   - Sensitivity: Measures the proportion of actual positives that are correctly identified.\n   - Specificity: Measures the proportion of actual negatives that are correctly identified.\n7. Link (PDF): https://jamanetwork.com/journals/jamaoncology/article-abstract/2808170\n   Link (Landing Page): 92c441c88f284537a65eb18c8799081b\n\nBEST MODEL:\nGradient Boosting Machine (GBM)\n\nWHY:\nThe Gradient Boosting Machine (GBM) stands out as the best model due to its superior predictive accuracy in the lung cancer risk prediction study (Paper 3). While the meta-analysis in Paper 1 provides valuable insights into the effect of dietary changes on CHD, it relies on statistical methods to synthesize existing trial data rather than creating a predictive model. Paper 2 uses multivariable regression to analyze the association between snus use and cardiac troponin, but this is primarily an explanatory rather than a predictive model. GBM excels in handling complex relationships and interactions within the data, leading to better discrimination (AUC-ROC) and potentially improved sensitivity and specificity compared to simpler models like logistic regression and SVM. The ensemble nature of GBM also enhances robustness, making it less prone to overfitting than individual models. Furthermore, a well-validated lung cancer risk prediction model like GBM has significant clinical usefulness for personalized screening and early detection strategies.\n\nCOMPARISON:\n- Paper 1 Models: Random-effects inverse-variance meta-analysis\n- Paper 2 Models: Multivariable linear regression\n- Paper 3 Models: Logistic Regression, Support Vector Machines (SVM), Random Forests, Gradient Boosting Machines (GBM)"
+  },
+  "model_training": {
+    "status": "success",
+    "accuracy": 0.239,
+    "model_name": "GradientBoostingClassifier",
+    "target_column": "Exercise Habits",
+    "model_path": "master_run\\models\\trained_model_gradientboostingclassifier.joblib"
+  }
+}
